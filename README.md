@@ -1,4 +1,4 @@
-SNN
+SBC
 ===
 
-Spike Neural Network
+Spike-based Controller
