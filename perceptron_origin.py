@@ -17,11 +17,11 @@ while True:
     #print('-' * 60)
     error_count = 0
     for input_vector, desired_output in training_set:
+        print '%.2f'% t, weights
         #print (weights)
         result = dot_product(input_vector, weights) > threshold
         #result = dot_product(input_vector, weights) >= threshold
         error = desired_output - result
-        print '%.2f'% t, weights, error
         if error != 0:
             error_count += 1
             for index, value in enumerate(input_vector):
